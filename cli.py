@@ -19,7 +19,7 @@ server_name = soc.recv(1024)
 server_name = server_name.decode()
 print('{} has joined...'.format(server_name))
 print('Enter [bye] to exit.')
-whileTrue:
+while True:
    message = soc.recv(1024)
    message = message.decode()
    print(server_name, ">", message)

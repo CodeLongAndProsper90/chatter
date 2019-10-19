@@ -1,4 +1,4 @@
-mport time, socket, sys
+import time, socket, sys
 print('Setup Server...')
 time.sleep(1)
 #Get the hostname, IP Address from socket and set Port
@@ -20,7 +20,7 @@ client_name = client_name.decode()
 print(client_name + ' has connected.')
 print('Press [bye] to leave the chat room')
 connection.send(name.encode())
-whileTrue:
+while True:
    message = input('Me > ')
    if message == '[bye]':
       message = 'Good Night...'
